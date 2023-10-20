@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Dancing+Script&family=Hanken+Grotesk:wght@500;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,300;0,500;1,300;1,500;1,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Poppins:wght@100;200;300;400;600;700&family=Young+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+main{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3eae3;
+}
+.box{
+    max-width: 37.5rem;
+    width: 90%;
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.left{
+    background: url("image-product-desktop.jpg");
+    flex-basis: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 27.573rem;
+}
+.right{
+    flex-basis: 50%;
+    padding: 1.8rem 2rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.right h3{
+    color: #888a99;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.45rem;
+}
+
+.right h1{
+    font-family: 'Fraunces', serif;
+    line-height: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.right p{
+    color: #888a99;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+.cash{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.cash h2{
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    color: #408b70;
+}
+.cash h4{
+    font-size: 0.8rem;
+    color: #888a99;
+    text-decoration: line-through;
+}
+.button{
+    display: flex;
+    color: #fff;
+    background: #408b70;
+    padding: 1rem 3.625rem ;
+    font-size: 0.85rem;
+    font-weight: 500;
+    gap: 0.75rem;
+    border-radius: 0.5rem;
+}
+@media(max-width: 375px) {
+    html{
+        font-size: 15px;
+    }
+    .box{
+        display: block;
+        height: 90%;
+    }
+    .left{
+        background: url("image-product-mobile.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 13.8rem;
+    }
+    main{
+        align-items: flex-start;
+        padding: 1.875rem 0;
+    }
+}
